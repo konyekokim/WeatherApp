@@ -74,7 +74,7 @@ public class MainActivityViewModelTest {
         verify(repo).forecastFromDb();
 
         assertEquals(resp, repo.getForecast("Lagos"));
-        assertEquals(responseFromDb, null/*repo.forecastFromDb()*/);
+        assertEquals(responseFromDb, repo.forecastFromDb());
     }
 
     @Test
