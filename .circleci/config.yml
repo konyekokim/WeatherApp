@@ -42,7 +42,7 @@ jobs:
         name: run motherfucking test
         command: ./gradlew lint test
 
-    - store_artificats:
+    - store_artifacts:
         path: app/build/reports
         destination: reports
 
